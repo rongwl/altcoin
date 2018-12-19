@@ -82,7 +82,7 @@
 // Application startup time (used for uptime calculation)
 const int64_t nStartupTime = GetTime();
 
-const char * const BITCOIN_CONF_FILENAME = "bitcoin.conf";
+const char * const BITCOIN_CONF_FILENAME = "altcoin.conf";
 const char * const BITCOIN_PID_FILENAME = "bitcoind.pid";
 const char * const DEFAULT_DEBUGLOGFILE = "debug.log";
 
@@ -596,7 +596,7 @@ fs::path GetDefaultDataDir()
     return pathRet / "Library/Application Support/Bitcoin";
 #else
     // Unix
-    return pathRet / ".bitcoin";
+    return pathRet / ".altcoin_0_16_3";
 #endif
 #endif
 }
